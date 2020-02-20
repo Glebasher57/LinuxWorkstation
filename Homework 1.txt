@@ -1,0 +1,25 @@
+Установил VMware Worstation. Поэтому вместо guest additions устанавливал дополнительно.
+Сделал это с помощью команд: 
+
+$ sudo mount /dev/cdrom /cdrom
+$ cp VMwareTools-10.1.5-5055693.tar.gz
+$ cp VMwareTools-10.1.5-5055693.tar.gz ~  //Скопировал в домашнюю дирректорию
+$ cd ~ //Вернулся в домашнюю дирректорию
+$ sudo unmount /dev/cdrom   //Размонтировал устройство
+$ tar xvfz VMwareTools-10.1.5-5055693.tar.gz  //распаковал архив
+$ cd vmware-tools-distrib
+$ sudo ./vmware-install.pl //запустил скрипт
+
+Установил Open-vm-tools
+
+В конфигурации вирутальной машины ничего не менял, т.к. до этого подключал Linux подсистему в Windows.
+
+$ sudo apt-get install openssh-server //установил shh server
+$ man ufw // открытие справки ufw
+$ sudo systemctl start sshd //запустил службу
+$ ssh-keygen //генерация ssh ключей
+$ sudo systemctl disable ufw
+$ sudo ufw disable //выключить фаервол
+$ sudo systemctl enable ufw 
+$ sudo ufw enable //включить фаервол
+$ sudo ufw allow 22 //добавил порт в исключение фаервола

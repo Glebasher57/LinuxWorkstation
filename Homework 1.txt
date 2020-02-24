@@ -1,4 +1,4 @@
-Установил VMware Worstation. Поэтому вместо guest additions устанавливал дополнительно.
+Установил VMware Worstation. Поэтому вместо guest additions устанавливал дополнительно VMware Tools.
 Сделал это с помощью команд: 
 
 $ sudo mount /dev/cdrom /cdrom

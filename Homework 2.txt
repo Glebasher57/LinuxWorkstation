@@ -8,10 +8,12 @@
 вложенные файлы и папки.
 
 4. В домашней директории 12 скрытых файлов. 
-	$ find -maxdepth 1 -type f -name '.*' | wc -l
+	$find -maxdepth 1 -type f -name '.*' | wc -l
    и 9 скрытых директории
-	$ find -maxdepth 1 -type d -name '.*' | wc -l
-5. 
+	$find -maxdepth 1 -type d -name '.*' | wc -l
+
+5. Вывод ошибок в отдельный файл. 130 ошибок. 
+$cat /etc/* 2> err.txt 
 
 6. Запустил игру Солитер - процесс sol.
 Открыл ctrl + alt + f2 другой терминал и через $ps aux | grep sol нашел нужный процесс.

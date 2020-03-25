@@ -1,0 +1,11 @@
+Докер образ:
+
+https://hub.docker.com/repository/docker/glebasher/flaskapp
+
+Команда запуска uWSGI контейнера с приложением на фласке:
+
+$docker run -ti --rm --hostname flaskapp -v $(pwd)/socket/:/opt/socket/ --name flaskapp flaskapp
+
+Команда запуска nginx контейнера:
+
+$docker run -ti --rm -p 80:80 -v $(d)/flaskapp.conf:/etc/nginx/conf.d/default.conf -v $(pwd)/socket:/socket --name nginx nginx:alpine
